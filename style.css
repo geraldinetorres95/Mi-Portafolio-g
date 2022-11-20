@@ -21,28 +21,13 @@ header {
 .menu a{
     color: #fff;
     text-transform: none;
-    padding: 0 30px;
+    padding: 0 18px;
    transition: 0.4s;
    text-decoration: none;
    letter-spacing: 2px;
 }
-.mostrar-menu, 
-.esconder-menu {
-    font-size: 30px;
-    cursor: pointer;
-   display: none;
-     transition: 0.4s;
-}
-.mostrar-menu {
-    order:1;  
-}
-.menu a:hover, 
-.mostrar-menu:hover,
-.esconder-menu:hover {
-    color: #6cc091;
-}
-#check {
-    display: none;
+.menu a:hover {
+color: #218b87;
 }
 #banner {
     padding:px;
@@ -138,8 +123,8 @@ font-size: 18px;
     flex-wrap: wrap; 
 }
 .caja2 {
-   font-size: 40px;
-   color: #218b87;
+    font-size: 35px;
+    color: #218b87;
     width: 100%;
     height: 100vh;
     background-color: #fff;
@@ -161,10 +146,10 @@ font-size: 18px;
     cursor: pointer;
 }
 .caja3 {
-    font-size: 40px;
+    font-size: 30px;
     color: rgb(70, 64, 68);
     width: 100%;
-    height: 630px;
+    height: 100vh;
     background-color:  rgb(223, 138, 183);
     display: flex;
     align-items: center;  
@@ -184,33 +169,17 @@ font-size: 18px;
 }
 @media(max-width: 765px){
     /*header*/
-    .mostrar-menu,
-    .esconder-menu{
+    .caja2 {
         display: block;
+        text-align: center;
     }
-    .menu {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background-color: #079b96;
-        right: -100%;
-       top: 0;
-       text-align: center;
-       padding: 100px 0px;
-       z-index: 100;
-       transition: 0.8s;
-    }
-    .menu a{
+    .caja3 {
         display: block;
-        padding: 20px;
+        text-align: center;
     }
-    .esconder-menu{
-        position: absolute;
-        top: 40px;
-        right: 40px;
-    }
-    #check:checked ~ .menu {
-        right: 0;
+    .iconos2 {
+        width: 70px;
+        height: 70px;
     }
 }
 
