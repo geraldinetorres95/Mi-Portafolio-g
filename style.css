@@ -1,13 +1,14 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 header {
     height: 100%;
-    background: #c1116f;
+    background: #c1116ff4;
     padding: 0 50px;
-    color: rgb(9, 122, 103);
+    color: rgb(228, 238, 236);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,7 +20,7 @@ header {
     letter-spacing: 5px;
 }
 .menu a{
-    color: #fff;
+    color: rgb(240, 233, 233);
     text-transform: none;
     padding: 0 18px;
    transition: 0.4s;
@@ -27,12 +28,30 @@ header {
    letter-spacing: 2px;
 }
 .menu a:hover {
-color: #218b87;
+color: #dce4e4;
+}
+.mostrar-menu, 
+.esconder-menu {
+    font-size: 30px;
+    cursor: pointer;
+   display: none;
+     transition: 0.4s;
+}
+.mostrar-menu {
+    order:1;  
+}
+.menu a:hover, 
+.mostrar-menu:hover,
+.esconder-menu:hover {
+    color: #579874;
+}
+#check {
+    display: none;
 }
 #banner {
-    padding:px;
+   
     background-image: url(teclado-b.jpg);
-     height: 45vh;
+     height: 40vh;
      background-size: cover;
      background-position: center;
 }
@@ -57,6 +76,14 @@ color: #218b87;
     font-weight: 400;
     padding: 10px 0px;
 }
+h4 {
+    color: rgb(41, 39, 39);
+}
+h5{
+    position: absolute;
+    margin-bottom: 500px;
+    font-size: 60px;
+}
 p {
 color: #218b87;
 }
@@ -75,8 +102,10 @@ color: #218b87;
     background: #6cc09070;
 }
 .imagenes {
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
+    border-style: inset;
+    border-color: #e61a6c4e;
 }
 #personas {
     padding: 50px 50px;
@@ -91,7 +120,7 @@ color: #218b87;
     padding: 30px 30px;
 }
 #personas div h4 {
-    color: #4d4d5c87;
+    color: #056240e8;
     font-size: 20px;
     margin: 15px 0px;
 }
@@ -115,8 +144,8 @@ font-size: 18px;
 }
 .caja1{
     width: 100%;
-    height: 80vh;
-    background-color: rgb(244, 219, 235);
+    height: 60vh;
+    background: rgb(243, 210, 226);
     display: flex;
     align-items: center;  
     justify-content:center ; 
@@ -124,24 +153,23 @@ font-size: 18px;
 }
 .caja2 {
     font-size: 35px;
-    color: #218b87;
+    color: rgba(192, 110, 165, 0.921);
     width: 100%;
-    height: 100vh;
-    background-color: #fff;
+    height: 110vh;
     display: flex;
     align-items: center;  
     justify-content: center; 
     flex-wrap: wrap; 
-    flex-direction: column;
+    flex-direction: column;   
 }
 .iconos {
   width: 100px;
   height: 100px;
   margin: 40px;
-  filter:drop-shadow( 0 0 9px rgb(39, 122, 150)) ;
+  filter:drop-shadow( 0 0 9px rgb(54, 81, 132)) ;
 }
 .iconos:hover {
-    transform: scale(1.1);
+    transform: scale(1.6);
     transition: all 0,3;
     cursor: pointer;
 }
@@ -149,37 +177,174 @@ font-size: 18px;
     font-size: 30px;
     color: rgb(70, 64, 68);
     width: 100%;
-    height: 100vh;
-    background-color:  rgb(223, 138, 183);
+    height: 90vh;
     display: flex;
     align-items: center;  
-    justify-content: center; 
-    flex-wrap: wrap;   
-    flex-direction: column; 
+    justify-content: center;
+    background-image: url(negro.jpeg);
+     background-size: cover;
+     background-position: center;
 }
+.caja4 {
+    width: 100%;
+    height: 20vh;
+    background-color: rgb(146, 89, 89);
+    display: flex;
+    align-items: center;  
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+.caja5 {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: #fff;
+    word-break: break-all;
+    height: 100vh;
+}
+li {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+}
+li span {
+    margin: 10px;
+}
+.api {
+    color: whitesmoke;
+    margin: 20px auto;
+}
+
 .iconos2 {
-    width: 100px;
-    height: 100px;
-    margin: 60px;
+    width: 30px;
+    height: 30px;
+   display: flexbox;
+   margin: 20px;
+   margin-bottom: 40px;
+   filter: drop-shadow(0 0 2px rgba(26, 22, 22, 0.783));
 }
 .iconos2:hover {
-    transform: scale(1.1);
+    transform: scale(2.2);
     transition: all 0,3;
     cursor: pointer;
 }
+.meu-formulario {
+    width: 350px;
+    height: 500px; 
+}
+form {
+    font-family: Verdana,Tahoma,sans-serif;
+    font-size: 15px;
+    max-width: 500px;
+    border-radius: 20px;
+    align-items: center;  
+    justify-content: center;
+    margin: 0px;
+}
+h1 {
+    margin-bottom: 20px;
+    margin-left: 40px;
+    color: #f3267f92;
+    font-size: 30px;
+}
+input, textarea {
+    width: 200px;
+    padding: 15px;
+    color: rgb(223, 36, 117);
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+input:hover, textarea:hover, input:focus, textarea:focus {
+    border-color: #000;
+    background-color: #353e415a;
+    color: rgb(14, 8, 8);
+    font-weight: bold;
+}
+.enviar {
+    background-color:  #e10e71e8;
+    height: 40px;
+    width: 200px;
+    font-weight: bold;
+    border-radius: 5px;
+    border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid;
+    color: rgb(250, 246, 250);
+}
+textarea {
+    width: 270px;
+    height: 120px;
+    line-height: 10px;
+    max-width: 400px;
+}
+form label {
+    margin-left: 20px;
+    color: #cf31aa8f;
+    font-weight: bold;
+}
+
 @media(max-width: 765px){
     /*header*/
-    .caja2 {
+    .mostrar-menu,
+    .esconder-menu{
         display: block;
+    }
+    .menu {
+        position: fixed;
+        width: 50%;
+        height: 20vh;
+        background-color: #eb1289d4;
+        right: -100%;
+       top: 0;
+       text-align: center;
+       padding: 100px 0px;
+       z-index: 100;
+       transition: 0.8s;
+       border-radius: 20px;
+    }
+    .menu a{
+        display: block;
+        padding: 20px;
+        color: rgb(237, 243, 243);
+    }
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    #check:checked ~ .menu {
+        right: 0;
+    }
+    .caja2 {
         text-align: center;
+       background-color: #e4cbe1;
+       
+    }
+    h5{
+        font-size:60px;
+        left: 10px; 
+        
+    }
+    .caja1  {
+        display: contents;
     }
     .caja3 {
         display: block;
-        text-align: center;
+        text-align:center ;
+    }
+    form {
+        margin-left: 30px;
     }
     .iconos2 {
-        width: 70px;
-        height: 70px;
+        width: 30px;
+        height: 30px;        
+    }
+    .iconos{
+        width: 100px;
+        height: 100px;
     }
 }
 
